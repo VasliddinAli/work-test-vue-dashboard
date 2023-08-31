@@ -195,6 +195,8 @@ header {
   right: 0;
   max-width: 81%;
   width: 100%;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 }
 header .header {
   background: #fff;
@@ -242,9 +244,13 @@ header .header-right .profile img {
 .main {
   margin-top: 80px;
   margin-left: 300px;
+  display: flex;
+  align-items: start;
+  justify-content: baseline;
+  gap: 20px;
 }
 .main .chart {
-  width: 700px;
+  width: 750px;
   background-color: #fff;
   padding: 15px;
   box-shadow: 1px 1px 10px 1px rgba(102, 112, 133, 0.0901960784);
@@ -253,7 +259,7 @@ header .header-right .profile img {
 .main .history {
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 700px;
+  width: 750px;
   height: auto;
   background-color: #fff;
   padding: 15px;
@@ -272,7 +278,7 @@ header .header-right .profile img {
 .main .income {
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 700px;
+  width: 750px;
   height: auto;
   background-color: #fff;
   padding: 15px;
@@ -313,4 +319,97 @@ header .header-right .profile img {
 }
 .main .income .income_basic .increase {
   font-size: 12px;
+}
+.main .balance {
+  margin-bottom: 20px;
+  width: 420px;
+  height: auto;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 1px 1px 10px 1px rgba(102, 112, 133, 0.0901960784);
+  border-radius: 10px;
+}
+.main .balance .line {
+  width: 1px;
+  height: 100px;
+  background: #D0D5DD;
+}
+.main .balance .balance_basic {
+  width: 100%;
+}
+.main .balance .balance_basic div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .balance .balance_basic div:nth-child(1) .icon {
+  width: 42px;
+  padding: 10px;
+  background: #F2F4F7;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.main .balance .balance_basic div:nth-child(2) {
+  display: flex;
+  align-items: end;
+  justify-content: baseline;
+  padding-bottom: 10px;
+}
+.main .balance .balance_basic div:nth-child(2) h3 {
+  font-size: 28px;
+}
+.main .balance .balance_basic .increase {
+  font-size: 12px;
+}
+.main .balance .balance_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  padding-top: 20px;
+}
+.main .balance .balance_bottom .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  border: 2px solid #4623E9;
+  border-radius: 10px;
+  background: none;
+  color: #000;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.main .balance .balance_bottom .btn:nth-child(1) {
+  background: #4623E9;
+  color: #fff;
+}
+.main .balance .balance_bottom .btn:hover {
+  transform: translateY(-2px) translateX(2px);
+}
+.main .balance .balance_bottom .btn .icon {
+  width: 23px;
+}
+.main .category {
+  margin-bottom: 20px;
+  width: 420px;
+  height: auto;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 1px 1px 10px 1px rgba(102, 112, 133, 0.0901960784);
+  border-radius: 10px;
+}
+.main .category .category-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.main .category .category-top .icon {
+  width: 23px;
 }/*# sourceMappingURL=style.css.map */
