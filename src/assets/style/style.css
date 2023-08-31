@@ -102,6 +102,10 @@ nav .navbar {
   padding: 20px;
   box-shadow: 1px 1px 10px 1px rgba(102, 112, 133, 0.2470588235);
   height: 100vh;
+  z-index: 999;
+}
+nav .navbar-top {
+  cursor: pointer;
 }
 nav .navbar-top-logo {
   display: flex;
@@ -193,10 +197,11 @@ header {
   position: fixed;
   top: 0;
   right: 0;
-  max-width: 81%;
-  width: 100%;
+  left: 0;
+  padding-left: 290px;
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
+  z-index: 1;
 }
 header .header {
   background: #fff;
@@ -412,4 +417,80 @@ header .header-right .profile img {
 }
 .main .category .category-top .icon {
   width: 23px;
+}
+
+@media (max-width: 1500px) {
+  .main .chart {
+    width: 700px;
+  }
+  .main .history {
+    width: 700px;
+  }
+  .main .income {
+    width: 700px;
+  }
+  .main .balance {
+    width: 350px;
+  }
+  .main .category {
+    width: 350px;
+  }
+}
+@media (max-width: 1380px) {
+  .main .chart {
+    width: 650px;
+  }
+  .main .history {
+    width: 650px;
+  }
+  .main .income {
+    width: 650px;
+  }
+  .main .balance {
+    width: 300px;
+  }
+  .main .category {
+    width: 300px;
+  }
+}
+@media (max-width: 1280px) {
+  .main .chart {
+    width: 550px;
+  }
+  .main .history {
+    width: 550px;
+  }
+  .main .income {
+    width: 550px;
+  }
+  .main .balance {
+    width: 300px;
+  }
+  .main .category {
+    width: 300px;
+  }
+}
+@media (max-width: 1200px) {
+  .main {
+    flex-direction: column;
+    width: 100%;
+  }
+  .main .chart {
+    min-width: 550px;
+    width: 100%;
+  }
+  .main .history {
+    min-width: 550px;
+    width: 100%;
+  }
+  .main .income {
+    min-width: 550px;
+    width: 100%;
+  }
+  .main .balance {
+    width: 300px;
+  }
+  .main .category {
+    width: 300px;
+  }
 }/*# sourceMappingURL=style.css.map */

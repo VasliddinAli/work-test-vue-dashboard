@@ -115,8 +115,10 @@ nav {
         padding: 20px;
         box-shadow: 1px 1px 10px 1px #6670853f;
         height: 100vh;
+        z-index: 999;
 
         &-top {
+            cursor: pointer;
             &-logo {
                 display: flex;
                 align-items: center;
@@ -226,9 +228,10 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    max-width: 81%;
-    width: 100%;
+    left: 0;
+    padding-left: 290px;
     backdrop-filter: blur(20px);
+    z-index: 1;
 
     & .header {
         background: #fff;
@@ -481,6 +484,107 @@ header {
             & .icon {
                 width: 23px;
             }
+        }
+    }
+}
+
+@media(max-width: 1500px) {
+    .main {
+        & .chart {
+            width: 700px;
+        }
+
+        & .history {
+            width: 700px;
+        }
+
+        & .income {
+            width: 700px;
+        }
+
+        & .balance {
+            width: 350px;
+        }
+
+        .category {
+            width: 350px;
+        }
+    }
+}
+
+@media(max-width: 1380px) {
+
+    .main {
+        & .chart {
+            width: 650px;
+        }
+
+        & .history {
+            width: 650px;
+        }
+
+        & .income {
+            width: 650px;
+        }
+
+        & .balance {
+            width: 300px;
+        }
+
+        .category {
+            width: 300px;
+        }
+    }
+}
+
+@media(max-width: 1280px) {
+    .main {
+        & .chart {
+            width: 550px;
+        }
+
+        & .history {
+            width: 550px;
+        }
+
+        & .income {
+            width: 550px;
+        }
+
+        & .balance {
+            width: 300px;
+        }
+
+        .category {
+            width: 300px;
+        }
+    }
+}
+@media(max-width: 1200px) {
+    .main {
+        flex-direction: column;
+        width: 100%;
+        & .chart {
+            min-width: 550px;
+            width: 100%;
+        }
+
+        & .history {
+            min-width: 550px;
+            width: 100%;
+        }
+
+        & .income {
+            min-width: 550px;
+            width: 100%;
+        }
+
+        & .balance {
+            width: 300px;
+        }
+
+        .category {
+            width: 300px;
         }
     }
 }
